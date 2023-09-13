@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Digitado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1></h1>
+    </div>
+    
+    <script>
+        var i = 0;
+        var texto ="Eu te Amo 💞";
+        var vel = 250
+        var H1 = document.querySelector('h1')
+
+        function animacaoH1(){
+            if(i<texto.length){
+                H1.innerHTML += texto.charAt(i)
+                i++
+                setTimeout(animacaoH1,vel)
+            }else{
+                H1.classList.add('sombra')
+            }
+        }
+
+        animacaoH1()
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+  
